@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #p1{
+            background-color: red;
+            border: 1px solid black;
+        }
+        #p2{
+            background-color: yellow;
+            height: 50px;
+        }
+
+        #c1{
+            color: white;
+            height: 100px;
+            background-color: green;
+            margin: 50px;
+        }
+        #c2{
+            color: white;
+            height: 100px;
+            background-color: blue;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!--子级会把margin-top  margin-bottom传递给父级-->
+    <!--上面元素margin-bottom和下面元素的margin-top叠加在一起，会取大的值-->
+    <div id="p1">
+        <div id="c1">box2</div>
+        <div id="c2">box3</div>
+    </div>
+    <div id="p2"></div>
+</body>
+</html>
