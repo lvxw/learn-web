@@ -2,9 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        div{
+            /*position: static;*/
+            margin: 50px;
+            height: 800px;
+            width: 800px;
+            border: 1px solid red;
+        }
+        #img1{
+            position: relative;
+            left: 20px;
+            top: 20%;
+        }
+        #img2{
+            position: relative;
+            left: 90px;
+            top: 10px;
+        }
+    </style>
 </head>
 <body>
-$END$
+    <!--
+        possition值：static、relative、absoulte、fiexed
+    -->
+    <div>
+        <img id= "img1" src="1.png">
+    </div>
+    <img id= "img2" src="1.png">
 </body>
 </html>

@@ -2,9 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        div{
+            background-color: #17ffa5;
+            height: 200px;
+            width: 200px;
+            margin: 0px auto;
+        }
+        #d1{
+            display: none;
+        }
+        #d3{
+            visibility: hidden;
+        }
+    </style>
 </head>
 <body>
-$END$
+    <!--
+        visibility: hidden元素不显示，但元素在页面中存在
+        display: none元素不显示，元素在页面中不存在
+    -->
+
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
 </body>
 </html>

@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-
+        div{
+            display: inline;
+            border: 1px solid greenyellow;
+        }
     </style>
 </head>
 <body>
-    <!--行级元素默认和其他行级元素共享一行-->
-   <a href="http://www.baidu.com">百度</a>
-   <a href="http://www.baidu.com">百度</a>
+    <!--
+        块级元素默认独占一行
+        例如：<h1> <div> <p>
+        如果让其共享一行，可设置display:inline
+    -->
+    <p>hello</p>
+    <p>hello</p>
+
+    <div>world</div>
+    <div>world</div>
 </body>
 </html>

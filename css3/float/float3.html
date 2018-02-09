@@ -2,49 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>三栏布局</title>
     <style>
         body{
-            width: 80%;
+            width: 960px;
             margin: 0px auto;
         }
-        div{
-            margin-bottom: 5px;
+        header{
+            width: 960px;
+            height:50px;
+            margin-top: 3px;
+            margin-bottom: 3px;
+            background-color: blue;
         }
-        #d1{
-            height: 40px;
-            margin-top: 10px;
-            background-color: red;
-        }
-        #d2{
-            height: 40px;
+        nav{
+            width: 960px;
+            height:50px;
+            margin-bottom: 3px;
             background-color: green;
         }
-        #d3{
+
+        section{
+            float:left;
+            width: 800px;
+            height:450px;
+            margin-bottom: 3px;
+        }
+        .left{
             float: left;
-            height: 400px;
-            width: 65%;
+            width: 157px;
+            height:450px;
             background-color: yellow;
         }
-        #d4{
+        article{
             float: right;
-            height: 400px;
-            width: 34.3%;
+            width: 640px;
+            height:450px;
             background-color: orange;
-         }
-        #d5{
-            clear: left;
-            height: 40px;
-            background-color: blue;
-            margin-bottom: 0px;
         }
+        .right{
+            float: right;
+            width: 157px;
+            height:450px;
+            background-color: yellow;
+        }
+        footer{
+            clear: right;
+            width: 960px;
+            height: 50px;
+            background-color: gray;
+        }
+
     </style>
 </head>
 <body>
-    <div id="d1"></div>
-    <div id="d2"></div>
-    <div id="d3"></div>
-    <div id="d4"></div>
-    <div id="d5"></div>
+    <header></header>
+    <nav></nav>
+    <section>
+        <aside class="left"></aside>
+        <article></article>
+    </section>
+    <aside class="right"></aside>
+    <footer></footer>
 </body>
 </html>
