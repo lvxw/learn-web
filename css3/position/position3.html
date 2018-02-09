@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        div{
+            position: relative;
+            margin: 50px;
+            height: 800px;
+            width: 800px;
+            border: 1px solid red;
+            z-index: 1;
+        }
+        #img1{
+            position: relative;
+        }
+        #img2{
+            position: absolute;
+            left: 200px;
+            top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        z-index值：数值越大，越靠近最上面;但必须要有position属性
+    -->
+    <div>
+        <img id= "img1" src="1.png">
+    </div>
+    <img id= "img2" src="1.png">
+</body>
+</html>
