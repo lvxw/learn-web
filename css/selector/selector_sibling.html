@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        div{
+            min-height: 50px;
+            background-color: rgba(17, 255, 190,0.3);
+            margin: 10px;
+        }
+
+        .a +div{        /*选择后面一个兄弟元素*/
+            color: red;
+        }
+
+        .a ~div{        /*选择后面所有兄弟元素*/
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <!--
+        选择下一个兄弟用‘+’ ；
+        选择后面的所有的兄弟用‘~’ ；
+        兄弟选择器只会往后选
+    -->
+    <div class="a0">a0</div>
+    <div class="a">a
+        <div>a1</div>
+    </div>
+    <div class="b">b</div>
+    <div class="c">c</div>
+</body>
+</html>
