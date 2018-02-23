@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #top{
+            margin: 5px auto;
+            width: 1024px;
+            height: 200px;
+            background-color: #859fa0;
+        }
+        #bottom{
+            margin: 5px auto;
+            width: 1024px;
+        }
+        #left{
+            text-align: center;
+            margin-right: 5px;
+            width: 200px;
+            height: 700px;
+            float: left;
+        }
+        #main{
+            width: 814px;
+            height: 700px;
+            float: left;
+        }
+        iframe{
+            width: 814px;
+            height: 700px;
+            border:none;
+        }
+        p{
+            height: 80px;
+            background-color: cadetblue;
+            line-height: 80px;
+            margin: 2px 0px;
+        }
+        p a{
+            text-decoration-line: none;
+            color: white;
+            font-weight: bolder;
+            letter-spacing: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="top"></div>
+    <div id="bottom">
+        <div id="left">
+            <p>
+                <a href="https://www.baidu.com" target="main">百度</a>
+            </p>
+            <p>
+                <a href="https://www.sogou.com/" target="main">搜狗</a>
+            </p>
+            <p>
+                <a href="https://www.baidu.com" target="main">百度</a>
+            </p>
+            <p>
+                <a href="https://www.sogou.com/" target="main">搜狗</a>
+            </p>
+        </div>
+        <div id="main">
+            <iframe name="main" src="welcome.html"></iframe>
+        </div>
+    </div>
+</body>
+</html>
