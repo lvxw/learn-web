@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        div{
+            position: relative;
+            width: 800px;
+            height: 600px;
+            margin: 30px auto;
+        }
+        img{
+            width: 800px;
+            height: 500px;
+        }
+        ul li{
+            line-height: 25px;
+            width: 25px;
+            height: 25px;
+            text-align: center;
+            list-style-type: none;
+            display: inline-block;
+            background-color: rosybrown;
+            margin-left: 5px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+        ul{
+            position: relative;
+            left: 75%;
+            bottom: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img id="img" src="image/11.jpg"/>
+        <ul>
+            <li onclick="img.src='image/11.jpg'">1</li>
+            <li onclick="img.src='image/22.jpg'">2</li>
+            <li onclick="img.src='image/33.jpg'">3</li>
+            <li onclick="img.src='image/44.jpg'">4</li>
+            <li onclick="img.src='image/55.jpg'">5</li>
+        </ul>
+    </div>
+</body>
+</html>
