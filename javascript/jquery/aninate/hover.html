@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jquery-1.8.3.min.js"></script>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        div{
+            height: 151px;
+            width: 210px;
+            overflow: hidden;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="fengjing.png"><br>
+    </div>
+    <div>
+        <img src="fengjing.png"><br>
+    </div>
+    <div>
+        <img src="fengjing.png"><br>
+    </div>
+    <div>
+        <img src="fengjing.png"><br>
+    </div>
+    <script>
+        $("img").hover(
+            function () {
+                this.style="height: 110%;width: 110%;";
+            },
+            function () {
+                this.style="height: 100%;width: 100%;";
+            }
+        );
+    </script>
+</body>
+</html>
