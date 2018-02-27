@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test form</title>
+    <style>
+        fieldset{
+            border: solid blue 1px;
+            width: 600px;
+            margin: 0px auto;
+            padding-top: 20px;
+        }
+        legend{
+            color: #585fff;
+        }
+        p{
+            margin-top: 0px;
+            margin-bottom: 10px;
+            padding-top: 0px;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+        .sr{
+            width: 150px;
+            float: right;
+        }
+        textarea{
+            resize: none;
+            width: 50%;
+            height: 120px;
+        }
+        /*[type=password]:focus,[type=text]:focus{*/
+            /*outline: blue solid 1px;*/
+        /*}*/
+    </style>
+</head>
+<body>
+    <form action="/from.action" method="get" target="_blank" accept-charset="UTF-8" name="test-form" autocomplete="on">
+        <fieldset>
+            <legend>这是一个表单</legend>
+            <p>
+                用户名：
+                <input type="text" name="user" placeholder="zhangsan" autocomplete="off"/>
+            </p>
+            <p class="pw">
+                密&nbsp;&nbsp;&nbsp;&nbsp;码：
+                <input type="password" name="password" required="required" pattern="\d{3}"/>
+            </p>
+            <p>
+                爱&nbsp;&nbsp;&nbsp;&nbsp;好：
+                <input type="checkbox" name="hobby" value="football" checked="checked"/>足球
+                <input type="checkbox" name="hobby" value="basketball" disabled="disabled"/>篮球
+                <input type="checkbox" name="hobby" value="badminton"/>羽毛球
+            </p>
+            <p>
+                性&nbsp;&nbsp;&nbsp;&nbsp;别：
+                <input type="radio" name="gender" value="male" checked="checked"/>男
+                <input type="radio" name="gender" value="famale"/>女
+            </p>
+            <p>
+                所在地：
+                <select name="address">
+                    <option>上海</option>
+                    <option>广州</option>
+                    <option>武汉</option>
+                    <option>北京</option>
+                </select>
+            </p>
+            <p>
+                上传文件：<input type="file" name="file">
+            </p>
+            <p>
+                留&nbsp;&nbsp;&nbsp;&nbsp;言：<br>
+                <textarea></textarea>
+            </p>
+            <p class="sr">
+                <input type="submit" value="提交"/>
+                <input type="reset" value="重置"/>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

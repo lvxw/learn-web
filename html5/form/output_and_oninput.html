@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>
+        <input id="beichusghu" type="text"/>
+        <input id="chusghu" type="text" oninput="chengfa();"/>
+        <output id="jieguo" type="text"></output>
+    </p>
+    <script>
+        function chengfa() {
+            let bcs = document.getElementById("beichusghu").value;
+            let cs = document.getElementById("chusghu").value;
+            alert(bcs)
+            alert(cs)
+            document.getElementById("jieguo").innerHTML=parseInt(bcs)*parseInt(cs);
+        }
+    </script>
+</body>
+</html>
